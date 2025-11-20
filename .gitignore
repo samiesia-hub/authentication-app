@@ -15,8 +15,11 @@ dist-ssr
 .env
 GEMINI.md
 src/components/common
+
 src/components/forms
+
 src/components/layout
+
 src/components/learning_help
 
 # Editor directories and files
