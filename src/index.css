@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@layer base {
+  html {
+    @apply max-w-7xl mx-auto p-12 text-center items-center bg-neutral-200;
+  }
+  /* styles/button.css */
+.btn-border-reveal {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-border-reveal::before,
+.btn-border-reveal::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn-border-reveal::before {
+  left: 0;
+}
+
+.btn-border-reveal::after {
+  right: 0;
+}
+
+.btn-border-reveal:hover::before,
+.btn-border-reveal:hover::after {
+  width: 50%;
+}
+}
